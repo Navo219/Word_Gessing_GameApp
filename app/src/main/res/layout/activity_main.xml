@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:background="@android:color/background_light">
+
+
+    <TextView
+        android:id="@+id/userNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome, User!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#211212"
+        android:layout_marginBottom="24dp" />
+
+
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time: 00:00"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_marginBottom="16dp" />
+
+
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: 100"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+
+    <TextView
+        android:id="@+id/attemptTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attempts left: 10"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_marginBottom="16dp" />
+
+
+    <EditText
+        android:id="@+id/guessEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your guess"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:minHeight="48dp"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="24dp" />
+
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Guess"
+        android:backgroundTint="#211212"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp" />
+
+
+    <Button
+        android:id="@+id/getClueButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get a Tip (-5 points)"
+        android:backgroundTint="#211212"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp" />
+
+
+    <Button
+        android:id="@+id/checkLetterButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check a Letter(-5 points) "
+        android:backgroundTint="#211212"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp" />
+
+
+    <Button
+        android:id="@+id/checkLengthButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check Word Length(-5 points) "
+        android:backgroundTint="#211212"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/submitLeaderboardButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit Score to the Leaderboard"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#211212"/>
+
+    <TextView
+        android:id="@+id/leaderboardMessageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/holo_green_dark"/>
+
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exit Game"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:textColor="@android:color/white" />
+
+
+
+</LinearLayout>
